@@ -217,3 +217,9 @@ bindsym $mod+Shift+s exec --no-startup-id "flameshot gui"
 # set brightnessctl
 bindsym XF86MonBrightnessDown exec --no-startup-id "brightnessctl s 5%-"
 bindsym XF86MonBrightnessUp exec --no-startup-id "brightnessctl s 5%+"
+
+# set no border
+default_border none
+
+# start picom
+exec_always --no-startup-id "picom --config ~/.config/picom/picom.conf"
