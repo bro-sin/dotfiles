@@ -204,8 +204,7 @@ exec --no-startup-id fcitx5
 
 
 # set wallpaper
-#exec_always feh --bg-fill ~/pictures/1330757.png
-exec --no-startup-id feh --bg-fill ~/pictures/1330757.png
+exec --no-startup-id feh --bg-fill ~/pictures/wallpapers/1328086.png
 
 
 # start polybar
@@ -214,6 +213,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # set flameshot shortcut
 bindsym $mod+Shift+s exec --no-startup-id "flameshot gui"
+bindsym Print exec --no-startup-id "flameshot gui"
 
 # set brightnessctl
 bindsym XF86MonBrightnessDown exec --no-startup-id "brightnessctl s 5%-"
