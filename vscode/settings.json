@@ -42,4 +42,6 @@
         "<C-a>": false,
         "<C-f>": false
     },
+    // "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Noto Sans','Iosevka Nerd Font'",
+    "editor.fontFamily": "'JetBrainsMono NF', 'Droid Sans Mono', 'monospace', monospace, 'Noto Sans','Iosevka Nerd Font'",
 }
