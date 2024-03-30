@@ -229,3 +229,9 @@ exec_always --no-startup-id "picom --config ~/.config/picom/picom.conf"
 # set scratchpad
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show 
+
+# close all windows
+bindsym $mod+Shift+a focus parent,kill
+
+# set default floating mod applications
+for_window [class="QQ"] floating enable
