@@ -235,3 +235,5 @@ bindsym $mod+Shift+a focus parent,kill
 
 # set default floating mod applications
 for_window [class="QQ"] floating enable
+for_window [class="wechat"] floating enable
+for_window [class="obs"] floating enable
