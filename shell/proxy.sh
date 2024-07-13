@@ -1,6 +1,7 @@
 # proxy
-proxy_ip="$(echo $SSH_CLIENT | awk '{print $1}')"
-proxy_port="7890"
+# proxy_ip="$(echo $SSH_CLIENT | awk '{print $1}')"
+proxy_ip=localhost
+proxy_port="7897"
 
 proxy_on() {
   if [[ -z $proxy_ip || -z $proxy_port ]]; then
