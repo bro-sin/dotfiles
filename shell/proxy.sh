@@ -52,7 +52,7 @@ function __proxy_show_help() {
   echo "  --ip <proxy_ip>   Set the proxy IP address (default: $default_proxy_ip)"
   echo "  --port <proxy_port> Set the proxy port (default: $default_proxy_port)"
   echo
-  echo "Example: proxy on --ip 127.0.0.1 --port 7897"
+  echo "Example: proxy on --ip $default_proxy_ip --port $default_proxy_port"
 }
 
 function proxy() {
