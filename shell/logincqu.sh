@@ -44,10 +44,6 @@ logincqu() {
 #定义注销函数
 logoutcqu() {
     local unbind_url="https://login.cqu.edu.cn:802/eportal/portal/mac/unbind?callback=dr1005&user_account=&wlan_user_mac=ffffffffffff&wlan_user_ip=&wlan_user_ipv6=&jsVersion=4.2.2&v=4798&lang=zh"
-    #执行解绑请求
-    local unbind_response=$(curl -s "$unbind_url")
-    echo "解绑响应: $unbind_response"
-
     local logout_url="https://login.cqu.edu.cn:802/eportal/portal/logout?callback=dr1004&login_method=1&user_account=drcom&user_password=123&ac_logout=1&register_mode=1&wlan_user_ip=&wlan_user_ipv6=&wlan_vlan_id=0&wlan_user_mac=ffffffffffff&wlan_ac_ip=&wlan_ac_name=&jsVersion=4.2.2&v=4212&lang=zh"
     # 执行注销请求
     local response=$(curl -s "$logout_url")
@@ -58,4 +54,10 @@ logoutcqu() {
     else
         echo "注销失败: $response"
     fi
+
+    #执行解绑请求
+    local unbind_response=$(curl -s "$unbind_url")
+    echo "解绑响应: $unbind_response"
+
+
 }
