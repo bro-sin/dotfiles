@@ -1,0 +1,16 @@
+# $HOME/.config/systemd/user/clean-downloads.timer
+[Unit]
+Description=Run downloads cleanup daily at 2 AM
+Requires=clean-downloads.service
+
+[Timer]
+# 基于日历的定时（常用）
+OnCalendar=*-*-* 02:00:00
+# 随机延迟，避免多个任务同时启动
+RandomizedDelaySec=300
+# 持久化，如果开机时间超过设定时间则立即补执行
+Persistent=true
+Unit=clean-downloads.service
+
+[Install]
+WantedBy=timers.target

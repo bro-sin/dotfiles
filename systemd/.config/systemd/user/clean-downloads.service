@@ -1,0 +1,7 @@
+# $HOME/.config/systemd/user/clean-downloads.service
+[Unit]
+Description=Clean up old files in Downloads directory
+
+[Service]
+Type=oneshot
+ExecStart=/home/lsin/dotfiles/shell/clean-downloads.sh
