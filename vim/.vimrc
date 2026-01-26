@@ -6,10 +6,11 @@ set number
 
 let mapleader = " "
 
-nnoremap <leader>w :w<CR>
+nnoremap <leader>w :update<CR>
 nnoremap <leader>q :q<CR>
 
-inoremap jk <ESC>
+inoremap jk <ESC>:update<CR>
+inoremap jj <ESC>
 
 
 set tabstop=4
